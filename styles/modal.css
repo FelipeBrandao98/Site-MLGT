@@ -1,0 +1,83 @@
+#modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: var(--blur);
+  transition: all 0.2s;
+
+  z-index: 2;
+}
+#modal.hide .content{
+  animation: modalHide;
+  animation-duration: 1s;
+}
+#modal.hide {
+  display: none;
+}
+#modal .content {
+  position: fixed;
+  width: 80%;
+  background-color: var(--background-blur);
+  color: var(--text);
+  padding: 30px;
+  border-radius: 8px;
+
+  animation: modal;
+  animation-duration: 1s;
+}
+#modal .content .close-button {
+  text-align: right;
+}
+#modal .content .close-button span{
+  display: flex;
+  width: 20px;
+  height: 20px;
+  background: center url(../assets/svg/x.svg);
+  cursor: pointer;
+}
+.night-mode #modal .content .close-button span {
+  background: center  url(../assets/svg/x-dark.svg);
+}
+#modal .content .content-title {
+  color: var(--highlight);
+  font-size: 30px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+#modal .content .content-title img {
+  height: 100px;
+}
+
+#modal .content .button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 30px auto 0;
+  width: 200px;
+  height: 62px;
+
+}
+#modal .content .button button {
+  width: 100%;
+  height: 100%;
+  color: var(--text-dark);
+  font-size: 20px;
+  text-shadow: 0 0 5px var(--background-blur-dark);
+  border-radius: 8px;
+  border: none;
+  background-color: royalblue;
+}
+#modal .content .button button:hover {
+  cursor: pointer;
+  filter: brightness(60%);
+}
+.night-mode #modal .content {
+  background-color: var(--background-blur-dark);
+  color: var(--text-dark);
+}

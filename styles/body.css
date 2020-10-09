@@ -1,0 +1,19 @@
+#body-area {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  z-index: 1;
+
+  width: 100%;
+}
+#body-area .content {
+  margin-top: 50px;
+  width: 720px;
+}
+#body-area .content .content-title {
+  font-size: 30px;
+  color: var(--highlight);
+}

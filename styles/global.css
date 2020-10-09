@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&family=Roboto:wght@100;300;400&display=swap');
+
+@keyframes modal {
+  0% {transform: translateY(-50%);top: -800px;}
+  50% {transform: translateY(-50%);top: 55%;}
+  100% {transform: translateY(-50%);top: 50%;}
+}
+@keyframes modalHide {
+  0% {transform: translateY(-50%);top: 55%;}
+  99% {transform: translateY(-50%);top: 8000px;}
+  100% {display: none;}
+}
+@keyframes HighlightText {
+  50% {font-size: 42px;}
+}
+
+* {
+  --background: #F9F6EF;
+  --text: #586e75;
+  --text-hover: rgba(0,0,0,0.9);
+  --background-blur: rgba(255, 255, 255, 0.92);
+  --border: #FCFCFC;
+
+  --checked: #8FBC8F;
+  --highlight: #CD5C5C;
+
+  --color-button-blue: #2E86C1;
+  --color-button-blue-hover: #1C699C;
+  --color-button-yellow: #F4D03F;
+  --color-button-yellow-hover: #B7950B;
+  --color-button-green: #239B56;
+  --color-button-green-hover: #145A32;
+  --color-button-purple: #884EA0;
+  --color-button-purple-hover: #6C3483;
+
+  --background-dark: #1F2020;
+  --text-dark: #E4E4E2;
+  --text-hover-dark: rgba(255,255,255,0.9);
+  --background-blur-dark: rgba(0, 0, 0, 0.92);
+  --border-dark: #000;
+
+  --blur: blur(20px) saturate(120%);
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  transition: color 0.9s;
+  transition: background-color 1s;
+}
+body {
+  background: var(--background);
+  color: var(--text);
+}
+.night-mode body {
+  background: var(--background-dark);
+  color: var(--text-dark);
+}

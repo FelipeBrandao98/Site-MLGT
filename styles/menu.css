@@ -1,0 +1,169 @@
+#menu-area {
+  position: fixed;
+  top: 0;
+  margin: 20px 5%;
+  width: 90%;
+  height: 60px;
+
+  -webkit-backdrop-filter: var(--blur);
+  backdrop-filter: var(--blur);
+
+  background: var(--background-blur);
+  border-radius: 8px;
+}
+#menu-area #menu {
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+#menu-area #menu .menu-items {
+  display: flex;
+  flex: 1;
+  height: 100%;
+  justify-content: center;
+}
+#menu-area #menu .menu-items #modal-button {
+  width: 120px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text-dark);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background: var(--color-button-blue);
+  transition: background 0.2s;
+}
+#menu-area #menu .menu-items #modal-button:hover {
+  background: var(--color-button-blue-hover);
+}
+#menu-area #menu .menu-items #modal-button.yellow {
+  background: var(--color-button-yellow);
+}
+#menu-area #menu .menu-items #modal-button.yellow:hover {
+  background: var(--color-button-yellow-hover);
+}
+#menu-area #menu .menu-items #modal-button.green {
+  background: var(--color-button-green);
+}
+#menu-area #menu .menu-items #modal-button.green:hover {
+  background: var(--color-button-green-hover);
+}
+#menu-area #menu .menu-items #modal-button.purple {
+  background: var(--color-button-purple);
+}
+#menu-area #menu .menu-items #modal-button.purple:hover {
+  background: var(--color-button-purple-hover);
+}
+#menu-area #menu .menu-items span#modify-button-blue {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-button-blue-hover);
+  border-radius: 50%;
+  background-color: var(--color-button-blue);
+}
+#menu-area #menu .menu-items span#modify-button-yellow {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-button-yellow-hover);
+  border-radius: 50%;
+  background-color: var(--color-button-yellow);
+}
+#menu-area #menu .menu-items span#modify-button-green {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-button-green-hover);
+  border-radius: 50%;
+  background-color: var(--color-button-green);
+}
+#menu-area #menu .menu-items span#modify-button-purple {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-button-purple-hover);
+  border-radius: 50%;
+  background-color: var(--color-button-purple);
+}
+#menu-area #menu .menu-items span#modify-button-blue:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+#menu-area #menu .menu-items span#modify-button-yellow:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+#menu-area #menu .menu-items span#modify-button-green:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+#menu-area #menu .menu-items span#modify-button-purple:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+#menu-area #menu .toggle{
+  display: flex;
+  flex-direction: row;
+  margin: 0 14px;
+}
+#menu-area #menu .toggle span{
+  align-self: center;
+  color: var(--text);
+  font-weight: bold;
+  margin: 0 14px;
+}
+.night-mode #menu-area #menu .toggle span {
+  color: var(--text-dark);
+}
+.night-mode #menu-area {
+  background-color: var(--background-blur-dark);
+  color: var(--text-dark);
+}
+#menu-area .menu-items {
+  margin: auto;
+}
+#menu-area .menu-items ul{
+  display: flex;
+  width: 500px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#menu-area .menu-items ul li{
+  align-self: center;
+  list-style: none;
+
+}
+#menu-area .menu-items ul li a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  color: var(--text);
+  transition: color 0.2s;
+}
+.night-mode #menu-area .menu-items ul li a {
+  color: var(--text-dark);
+  transition: color 0.2s;
+}
+#menu-area .menu-items ul li a:hover {
+  cursor: pointer;
+  color: var(--text-hover);
+}
+.night-mode #menu-area .menu-items ul li a:hover {
+  cursor: pointer;
+  color: var(--text-hover-dark);
+}
+@supports (backdrop-filter: blur(20px)) {
+  #menu-area {
+    backdrop-filter: var(--blur);
+    -webkit-backdrop-filter: var(--blur);
+  }
+}
