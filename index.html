@@ -4,12 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/global.css">
-  <link rel="stylesheet" href="styles/menu.css">
-  <link rel="stylesheet" href="styles/logo.css">
-  <link rel="stylesheet" href="styles/body.css">
+
+  <link rel="stylesheet" href="styles/menu/menu.css">
+  <link rel="stylesheet" href="styles/menu/buttonModalHighlight.css">
+  <link rel="stylesheet" href="styles/menu/inputdarkmode.css">
+
+  <link rel="stylesheet" href="styles/body/logo.css">
+  <link rel="stylesheet" href="styles/body/body.css">
+
   <link rel="stylesheet" href="styles/footer.css">
-  <link rel="stylesheet" href="styles/inputdarkmode.css">
-  <link rel="stylesheet" href="styles/modal.css">
+  <link rel="stylesheet" href="styles/components/modal.css">
   <title>MLGT - Soluções em T.I</title>
 </head>
 <body>
@@ -25,11 +29,15 @@
       <div class="menu-items">
         <ul>
           <li>
-            <a href="">Home</a>
+            <a>Home</a>
           </li>
           <li>
             <a href="">Contato</a>
           </li>
+        </ul>
+      </div>
+      <div id="modal-button-area">
+        <ul>
           <li>
             <button name="modalButton" id="modal-button" class="" >Suporte Remoto</a>
           </li>
@@ -160,20 +168,35 @@
   </div>
   <div id="modal" class="hide">
     <div class="content">
-      <div class="close-button">
-        <span id="close-button"></span>
-      </div>
-      <div class="content-title">
-        <img src="assets/teamviewer.png" alt="TeamViewer">
-      </div>
-      <div class="content-text">
-        O teamViewer é a nossa ferramenta de acesso remoto, com ela nós conectamos na máquina e assumimos o controle remotamente.
-        <div class="button">
-          <button href="https://get.teamviewer.com/suportemlgt">Download</button>
+      <div class="close-minimize-maximize-area">
+        <div class="close-button">
+          <span id="close-button"></span>
+        </div>
+        <div class="minimize-button">
+          <span id="minimize-button"></span>
+        </div>
+        <div class="maximize-button">
+          <span id="maximize-button"></span>
         </div>
       </div>
-      <div class="content-image">
+      <div class="content-area">
+        <div class="content-title">
+          <img src="assets/teamviewer.png" alt="TeamViewer">
+        </div>
+        <div class="content-text">
+          O teamViewer é a nossa ferramenta de acesso remoto, com ela nós conectamos na máquina e assumimos o controle remotamente.
+        </div>
+        <div class="content-image">
 
+        </div>
+      </div>
+      <div class="download-buttons">
+        <div class="button-mac-download">
+          <a href="downloads/TeamViewer QuickSupport.app.zip" download="TeamViewer QuickSupport.app.zip"><span id="apple-logo-button"></span>Baixar para MacOS</a>
+        </div>
+        <div class="button-windows-download">
+          <a href="downloads/TeamViewer QuickSupport.app.zip" download="TeamViewer QuickSupport.app.zip"><span id="apple-logo-button"></span>Baixar para Windows</a>
+        </div>
       </div>
     </div>
   </div>

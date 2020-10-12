@@ -1,0 +1,110 @@
+* {
+  --color-button-blue: #2E86C1;
+  --color-button-blue-hover: #1C699C;
+  --color-button-yellow: #F9C700;
+  --color-button-yellow-hover: #B7950B;
+  --color-button-green: #239B56;
+  --color-button-green-hover: #145A32;
+  --color-button-purple: #884EA0;
+  --color-button-purple-hover: #6C3483;
+}
+
+#menu-area #menu #modal-button-area {
+  display: flex;
+  flex-direction: row;
+}
+#menu-area #menu #modal-button-area ul {
+  display: flex;
+  width: 300px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+#menu-area #menu #modal-button-area ul li{
+  align-self: center;
+  list-style: none;
+}
+#menu-area #menu #modal-button-area #modal-button {
+  width: 120px;
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--text-dark);
+  font-family: 'Quicksand', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  background: var(--color-button-blue);
+  transition: background 0.2s;
+}
+#menu-area #menu #modal-button-area #modal-button:hover {
+  background: var(--color-button-blue-hover);
+}
+#menu-area #menu #modal-button-area #modal-button.yellow {
+  background: var(--color-button-yellow);
+  color: var(--text);
+}
+#menu-area #menu #modal-button-area #modal-button.yellow:hover {
+  background: var(--color-button-yellow-hover);
+  color: var(--text);
+}
+#menu-area #menu #modal-button-area #modal-button.green {
+  background: var(--color-button-green);
+}
+#menu-area #menu #modal-button-area #modal-button.green:hover {
+  background: var(--color-button-green-hover);
+}
+#menu-area #menu #modal-button-area #modal-button.purple {
+  background: var(--color-button-purple);
+}
+#menu-area #menu #modal-button-area #modal-button.purple:hover {
+  background: var(--color-button-purple-hover);
+}
+#menu-area #menu #modal-button-area span#modify-button-blue {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-button-blue-hover);
+  border-radius: 50%;
+  background-color: var(--color-button-blue);
+}
+#menu-area #menu #modal-button-area span#modify-button-yellow {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-button-yellow-hover);
+  border-radius: 50%;
+  background-color: var(--color-button-yellow);
+}
+#menu-area #menu #modal-button-area span#modify-button-green {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-button-green-hover);
+  border-radius: 50%;
+  background-color: var(--color-button-green);
+}
+#menu-area #menu #modal-button-area span#modify-button-purple {
+  display: flex;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--color-button-purple-hover);
+  border-radius: 50%;
+  background-color: var(--color-button-purple);
+}
+#menu-area #menu #modal-button-area span#modify-button-blue:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+#menu-area #menu #modal-button-area span#modify-button-yellow:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+#menu-area #menu #modal-button-area span#modify-button-green:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
+#menu-area #menu #modal-button-area span#modify-button-purple:hover {
+  cursor: pointer;
+  filter: brightness(1.25);
+}
