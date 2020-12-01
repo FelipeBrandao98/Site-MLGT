@@ -49,7 +49,7 @@
   background-color: rgb(236, 98, 87);
   margin-right: 7px;
 }
-#modal .content .close-minimize-maximize-area .close-button span:hover {
+#modal .content .close-minimize-maximize-area:hover .close-button span {
   background: center url(../../assets/svg/x-mac.svg);
   background-color: rgb(236, 98, 87);
 }
@@ -57,14 +57,14 @@
   margin-right: 7px;
   background-color: rgb(246, 196, 81);
 }
-#modal .content .close-minimize-maximize-area .minimize-button span:hover {
+#modal .content .close-minimize-maximize-area:hover .minimize-button span {
   background: center url(../../assets/svg/minus-mac.svg);
   background-color: rgb(246, 196, 81);
 }
 #modal .content .close-minimize-maximize-area .maximize-button span{
   background-color: rgb(101, 204, 87);
 }
-#modal .content .close-minimize-maximize-area .maximize-button span:hover {
+#modal .content .close-minimize-maximize-area:hover .maximize-button span {
   background: center url(../../assets/svg/max-mac.svg);
   background-color: rgb(101, 204, 87);
 }
